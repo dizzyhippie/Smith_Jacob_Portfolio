@@ -1,7 +1,7 @@
 <?php 
     $db_dsn = array( 
-        'host' => 'localhost', // this will change when going live
-        'dbname' => 'smith_portfolio', // update this with your database name
+        'host' => 'localhost', //will change when going live
+        'dbname' => 'smith_portfolio',
         'charset' => 'utf8'
     );
 
