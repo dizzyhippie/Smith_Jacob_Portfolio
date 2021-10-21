@@ -1,7 +1,7 @@
 <?php 
     $db_dsn = array( 
-        'host' => 'localhost', // this will change when going live
-        'dbname' => 'smith_portfolio', // update this with your database name
+        'host' => 'localhost', //will change when going live
+        'dbname' => 'smith_portfolio',
         'charset' => 'utf8'
     );
 
@@ -14,10 +14,8 @@
 
     try{
         $pdo = new PDO($dsn, $db_user, $db_pass); // make connection to database using username and password
-        // var_dump($pdo);
-        // echo (in this case) is almost like console.log
-        // echo "you're in! enjoy the show";
-    } catch (PDOException $exception){
-        echo 'Connection Error:'.$exception->getMessage();
-        exit();
+      } 
+    catch (PDOException $exception){
+    echo 'Connection Error:'.$exception->getMessage();
+    exit();
     }
