@@ -1,7 +1,7 @@
 <?php 
     $db_dsn = array( 
         'host' => 'localhost', // this will change when going live
-        'dbname' => 'newProfData', // update this with your database name
+        'dbname' => 'smith_portfolio', // update this with your database name
         'charset' => 'utf8'
     );
 
