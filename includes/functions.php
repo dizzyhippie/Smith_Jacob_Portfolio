@@ -4,7 +4,7 @@
 
     // if a user passes an ID via a query string (?id=1)
     // then we should retrieve the row of data that matches and pass it back to the app
-    function getPortfolioData($conn, $project) {
+    function getData($conn, $project) {
         if (is_null($project)){
             $query = "SELECT * FROM tbl_projects";
         } else{
