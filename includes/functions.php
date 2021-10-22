@@ -1,7 +1,7 @@
 <?php
     include("connect.php");
     
-    $query = "SELECT * FROM tbl_design, tbl_development";
+    $query = "SELECT * FROM tbl_projects";
 
     $runQuery = $pdo->query($query);
 
