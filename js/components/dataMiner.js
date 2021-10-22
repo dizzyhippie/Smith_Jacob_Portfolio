@@ -15,9 +15,8 @@ function getPortfolioData(params, cb) {
     fetch(baseURL)
     .then(res => res.json()) // unpack the API response (turn it back into plain JS)
     .then(data => {
-        
-        // call a function to generate our dynamic content Below here
-        
+        // call a function to generate our dynamic content below
+        cb(data[0]);
     })
     .catch(error => console.error(error)); // catch and report any errors
 }
