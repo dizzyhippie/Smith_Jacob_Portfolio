@@ -1,10 +1,12 @@
-import { getData } from "./components/dataMiner.js";
+import { getPortfolioData } from "./components/dataMiner.js";
 (() => {
 
-    getData();
+    getPortfolioData();
 
-    function loadGallery(){
-
+    function loadShells(data){
+        console.log(data);
     }
+
+    loadShells();
 
 })()
