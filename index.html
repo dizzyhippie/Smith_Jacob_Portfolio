@@ -4,12 +4,14 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://use.typekit.net/ghs3lib.css">
     <link rel="stylesheet" href="css/main.css">
     <title>mindofjacob.ca | Portfolio | Front End Developer</title>
 </head>
 <body>
+<section id="container">
     <header id="mainHeader">
-        <img src="#" id="logo">
+        <img src="images/Smith_Logo-01.svg" id="logo">
         <nav id="mainNav">
             <ul>
                 <li>PORTFOLIO</li>
@@ -36,14 +38,16 @@
     </template>
 
 <!--This is the template for the modal that will open up when clicked on and display information about the project-->
-<section id="modal-template">
-    <section class="modal-panel">
-        <div class="company-logo"><img src="#"></div>
-        <h2 class="m_name"></h2>
-        <h3 class="m_type"></h3>
-        <p class="m-desc"></p>   
-    </section>
-</section> 
+    <section id="modal-template">
+        <section class="modal-panel">
+            <div class="company-logo"><img src="#"></div>
+            <h2 class="m_name"></h2>
+            <h3 class="m_type"></h3>
+            <p class="m-desc"></p>   
+            <button class="close">CLOSE X</button>
+        </section>
+    </section> 
+</section>
 <script src="js/main.js" type="module" defer></script>    
 </body>
 </html>

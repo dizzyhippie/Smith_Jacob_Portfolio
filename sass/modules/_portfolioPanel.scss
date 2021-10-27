@@ -1,13 +1,28 @@
 .portfolio-pieces{
     background-image: url("../images/gallery-purple.png");
-    width: 265px;
-    height: 360px;
+    width: 215px;
+    height: 289px;
+    border-radius: 45px;
+    margin: 0 auto;
 }
 
 .p_name{
     text-align: center;
+    font-family: loos-normal, sans-serif;
+    font-size: 34px;
+    font-weight: 800;
+    font-style: normal;
+    color: #9E5F81;
+    padding-top: 150px;
+    
 }
 
 .p_industry{
     text-align: center;
+    font-family: loos-normal, sans-serif;
+    font-size: 14px;
+    font-weight: 600;
+    font-style: normal;
+    color: #9E5F81;
+    margin-top: 10px;
 }
