@@ -9,7 +9,7 @@
     <title>mindofjacob.ca | Portfolio | Front End Developer</title>
 </head>
 <body>
-<section id="container">
+<section class="container">
     <header id="mainHeader">
         <img src="images/Smith_Logo-01.svg" id="logo">
         <nav id="mainNav">
@@ -26,17 +26,14 @@
         <p id="about-p"></p>
         <button id="enter" href="#"></button>
     </section>
+
+    <main id="app">
     
-    <section id="portfolio"></section>
-
-<!--This is the template for the gallery shells-->
-    <template id="portfolio-template">
-        <section class="portfolio-pieces" data-key="">
-            <h2 class="p_name"></h2>
-            <h3 class="p_industry"></h3>
-        </section>
-    </template>
-
+    <section id="portfolio">
+        <tile v-for="item in portfolioData"></tile>
+    </section>
+    
+    </main>
 <!--This is the template for the modal that will open up when clicked on and display information about the project-->
     <section id="modal-template">
         <section class="modal-panel">
@@ -48,6 +45,7 @@
         </section>
     </section> 
 </section>
+<script src="https://cdn.jsdelivr.net/npm/vue@2/dist/vue.js"></script>
 <script src="js/main.js" type="module" defer></script>    
 </body>
 </html>
