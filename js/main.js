@@ -1,39 +1,26 @@
 import { getPortfolioData } from "./components/dataMiner.js";
+import TheGalleryThumbnail from "./components/TheGalleryThumbnail.js";
+
 (() => {
-const   portfolio = document.querySelector("#portfolio"),
-        theTemplate = document.querySelector("#portfolio-template").content,
-        closeButton = document.querySelector(".close"),
-        buttons = document.querySelectorAll(".open");
+    const myVue = new Vue ({
+        created: function() {
+            //fetch portfolio data
+            getPortfolioData(null, (data) => this.portfolioData = data)
+        },
 
-function buildTeam(info) {
-    info.forEach(project => {
-        let panel = theTemplate.cloneNode(true),
-        projectInfo = panel.firstElementChild.children;
-        
-        //custom data attribute value to the section tag inside the template
-        panel.firstElementChild.dataset.key = project.id;
+        data: {
+            portfolioData: [],
+            message: "hello Vue!"
+        },
 
-        projectInfo[0].textContent = project.name;
-        projectInfo[1].textContent = project.industry;
-        
-        // put the virtual panel in the team section in our HTML page
-        portfolio.appendChild(panel);
-    })
-}
+        methods: {
+        },
 
-function openModal(){
+        components: {
+            tile: TheGalleryThumbnail
+        }
     
-    let modal = document.querySelector(".modal-panel");
-    modal.style.display = "block";
+    }).$mount("#app");
 
-    //let key = this.dataset.key;
 
-    closeButton.addEventListener('click', () => {
-        modal.style.display = "none";
-      }) 
-}
-
-getPortfolioData(null, buildTeam);
-
-portfolio.addEventListener("click", openModal)
 })()
