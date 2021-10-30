@@ -1,5 +1,6 @@
 import { getPortfolioData } from "./components/dataMiner.js";
 import TheGalleryThumbnail from "./components/TheGalleryThumbnail.js";
+import TheModal from "./components/TheModal.js";
 
 (() => {
     const myVue = new Vue ({
@@ -10,14 +11,15 @@ import TheGalleryThumbnail from "./components/TheGalleryThumbnail.js";
 
         data: {
             portfolioData: [],
-            message: "hello Vue!"
         },
 
         methods: {
+           
         },
 
         components: {
-            tile: TheGalleryThumbnail
+            tile: TheGalleryThumbnail,
+            modal: TheModal
         }
     
     }).$mount("#app");
