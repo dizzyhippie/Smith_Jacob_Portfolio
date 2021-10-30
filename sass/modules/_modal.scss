@@ -1,6 +1,7 @@
 .modal-panel{
    display: none;
-    width: 310px;
+    width: 250px;
+    height: 350px;
     background-color: #000;
     padding-top: 25px;
     margin-bottom: 50px;
@@ -8,6 +9,6 @@
     border-radius: 50px;;
     position: fixed;
     //Position the modal in the center of the screen
-    left: 50%;
-    top: 35%;
+    left: 10%;
+    top: 20%;
 }
