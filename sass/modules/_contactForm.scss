@@ -1,0 +1,19 @@
+#contact{
+    display: block;
+    margin: 0 auto;
+}
+
+#contact-form{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+   
+}
+
+.field{
+    margin-top: 8px;
+    margin-bottom: 8px;
+    border: none;
+    border-bottom: 1px solid #E5E5E5;
+    width: 280px;
+}
