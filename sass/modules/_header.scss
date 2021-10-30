@@ -10,4 +10,26 @@
     width: 75px;
     margin-left: 10px;
     margin-top: 10px;
+    justify-content: flex-start;
+}
+
+
+#mainNav button{
+    background: url(../dist/hamburger-icon.svg) center no-repeat;
+    width: 45px;
+    height: 40px;
+    border: none;
+    transition: all .1s ease;
+}
+
+#mainNav button.clicked{
+    transform: rotate(90deg);
+}
+
+#hamContainer{
+    display: none;
+}
+
+#hamContainer.slide{
+   display: block;
 }
