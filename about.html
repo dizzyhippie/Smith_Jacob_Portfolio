@@ -4,10 +4,29 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://use.typekit.net/ghs3lib.css">
     <link rel="stylesheet" href="css/main.css">
     <title>mindofjacob.ca | About | Front End Developer</title>
 </head>
 <body>
+<section class="container">
+    <header id="mainHeader">
+        <img src="images/Smith_Logo-01.svg" id="logo">
+        <nav id="mainNav">
+        <h2 class="hidden">Main Navigation</h2>
+            <button id="hamButton"></button>
+            <div id="hamContainer">
+                <ul id="navigation">
+                    <li><a href="index.html">PORTFOLIO</a></li>
+                    <li class="active"><a href="about.html">ABOUT</a></li>
+                    <li><a href="contact.html">CONTACT</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+</section>
+<script src="https://cdn.jsdelivr.net/npm/vue@2/dist/vue.js"></script>
+<script src="js/components/hamMenu.js"></script>
 <script src="js/main.js" type="module" defer></script>    
 </body>
 </html>

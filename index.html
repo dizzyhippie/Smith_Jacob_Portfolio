@@ -13,41 +13,39 @@
     <header id="mainHeader">
         <img src="images/Smith_Logo-01.svg" id="logo">
         <nav id="mainNav">
-            <ul>
-                <li>PORTFOLIO</li>
-                <li>ABOUT</li>
-                <li>CONTACT</li>
-            </ul>
+        <h2 class="hidden">Main Navigation</h2>
+            <button id="hamButton"></button>
+            <div id="hamContainer">
+                <ul id="navigation">
+                    <li class="active"><a href="index.html">PORTFOLIO</a></li>
+                    <li><a href="about.html">ABOUT</a></li>
+                    <li><a href="contact.html">CONTACT</a></li>
+                </ul>
+            </div>
         </nav>
     </header>
     <section id="intro">
-        <h1 class="hidden">Introduction</h1>
+    <h2 class="hidden">Introduction</h2>
         <h2 id="about-h">Hello!</h2>
         <p id="about-p">My name is Jacob Smith, a Front End Developer and Graphic Designer located in London, Ontario.</p>
-        <button id="enter" href="#"></button>
+        <button id="enter" href="#">Enter</button>
     </section>
     <main id="app">
     <section id="portfolio">
+    <h2 class="hidden">Portfolio Section</h2>
         <ul>
             <li>All</li>
             <li>Development</li>
             <li>Design</li>
             <li>Motion</li>
         </ul>
-
         <tile v-for="item in portfolioData" :key="item.id" :piece="item"></tile>
-
     </section>
-    <section class="modal-panel">
-        <div class="company-logo"><img src="#"></div>
-        <h2 class="m_name"></h2>
-        <h3 class="m_type"></h3>
-        <p class="m-desc"></p>   
-        <button class="close">CLOSE X</button>
-    </section>
+    <modal v-for="item in portfolioData" :key="item.id" :piece="item"></modal>
     </main>
 </section>
 <script src="https://cdn.jsdelivr.net/npm/vue@2/dist/vue.js"></script>
+<script src="js/components/hamMenu.js"></script>
 <script src="js/main.js" type="module" defer></script>    
 </body>
 </html>
