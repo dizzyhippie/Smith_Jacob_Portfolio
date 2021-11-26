@@ -11,10 +11,13 @@ import TheModal from "./components/TheModal.js";
 
         data: {
             portfolioData: [],
+            currentItem : {}
         },
 
         methods: {
-           
+           swapInfo(item){
+               this.currentItem = item;
+           }
         },
 
         components: {
