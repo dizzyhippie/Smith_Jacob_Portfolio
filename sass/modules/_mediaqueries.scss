@@ -1,0 +1,8 @@
+@media screen and (min-width: 460px){
+    #portfolio{
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+        justify-content: space-evenly;
+    }
+}
