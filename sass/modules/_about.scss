@@ -1,0 +1,21 @@
+#about-select{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    margin-bottom: 15px;
+    cursor: pointer;
+}
+
+.about-title{
+    display: flex;
+}
+
+.about-bio{
+    margin-left: 10px;
+    margin-right: 10px;
+
+}
+
+.about-active{
+    color: purple;
+}

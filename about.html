@@ -46,9 +46,15 @@
             <p class="skills-desc">skills desc</p>
         </section>
     </section>
+   <main id="app">
+       <ul id="about-select">
+           <selector v-on:showdata="swapInfo" v-for="item in aboutData" :piece="item" :key="item.id"></selector>
+       </ul>
+        <about :piece="currentItem"></about>
+   </main>
 </section>
 <script src="https://cdn.jsdelivr.net/npm/vue@2/dist/vue.js"></script>
 <script src="js/components/hamMenu.js"></script>
-<script src="js/main.js" type="module" defer></script>    
+<script src="js/about.js" type="module" defer></script>    
 </body>
 </html>
