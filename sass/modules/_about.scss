@@ -2,12 +2,9 @@
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
+    margin-top: 25px;
     margin-bottom: 15px;
     cursor: pointer;
-}
-
-.about-title{
-    display: flex;
 }
 
 .about-bio{
@@ -18,4 +15,30 @@
 
 .about-active{
     color: purple;
+}
+
+#about-pic{
+    display: block;
+    margin: 0 auto;
+    max-width: 250px;
+}
+
+#aboutSkills{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+.skills{
+    margin-top: 45px;
+    margin-bottom: 25px;
+}
+
+.left{
+    margin-right: 10px;
+}
+
+.right{
+    margin-left: 10px;
 }

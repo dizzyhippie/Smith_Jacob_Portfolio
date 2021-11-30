@@ -1,8 +1,29 @@
-@media screen and (min-width: 460px){
-    #portfolio{
+                                            
+                                            //FIRST TABLET QUERY
+
+@media screen and (min-width: 440px){
+    .portfolio{
         display: flex;
         flex-wrap: wrap;
         flex-direction: row;
         justify-content: space-evenly;
+    }
+
+    .left, .right{
+        margin-right: 10px;
+        margin-left: 10px;
+    }
+}
+
+                                            //SECOND TABLET QUERY
+
+@media screen and (min-width: 560px){
+    #trapSection{
+        display: block;
+        background-image: url("../images/trapcomplex.png");
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        height: 555px;
     }
 }

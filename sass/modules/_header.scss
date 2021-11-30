@@ -1,5 +1,6 @@
 #mainHeader{
     background-image: url("../images/hero-m.png");
+    height: 240px;
     background-size: cover;
     background-position: center;
     display: flex;
@@ -10,15 +11,36 @@
 
 #logo{
     margin-left: 10px;
-    margin-top: 25px;
-    margin-bottom: 25px;
-    width: 75px;
+    width: 25%;
+    margin-bottom: 20px;
+
 }
 
 #mainNav {
     display: flex;
-    margin-top: 35px;
+    margin-top: 85px;
     margin-right: 10px;
+}
+
+#navigation{
+    margin-left: 15px;
+}
+
+#navigation li{
+    margin-top: 10px;
+    margin-bottom: 10px;
+
+}
+
+#navigation li a{
+    font-family: loos-normal, sans-serif;
+    text-decoration: none;
+    color: white;
+    font-size: 20px;
+}
+
+.active{
+    color: #EE8076;
 }
 
 #mainNav button{

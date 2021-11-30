@@ -1,0 +1,17 @@
+#footer{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+#footer-logo{
+    width: 15%;
+    margin-left: 5px;
+    margin-right: 5px;
+}
+
+.footer-button{
+    padding: 5px;
+    border-radius: 25px;
+    border: none;
+}
