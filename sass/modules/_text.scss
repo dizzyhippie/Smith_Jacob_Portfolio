@@ -52,6 +52,12 @@
     margin-top: 10px;
 }
 
+.section-header{
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+}
+
 //Intro About Fonts
 #about-h{
     text-align: center;
@@ -69,17 +75,6 @@
     margin: 0 auto;
     margin-bottom: 15px;
     max-width: 600px;
-}
-
-//Navigation Fonts
-#navigation li{
-    color: #fff;
-    text-align: center;
-    font-family: loos-normal, sans-serif;
-    font-size: 16px;
-    font-weight: 400;
-    padding-top: 5px;
-    padding-bottom: 5px;
 }
 
 //About Page

@@ -1,57 +1,73 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://use.typekit.net/ghs3lib.css">
-    <link rel="stylesheet" href="css/main.css">
-    <title>mindofjacob.ca | Portfolio | Front End Developer</title>
-</head>
-<body>
-<section class="container">
-    <header id="mainHeader">
-        <img src="images/Smith_Logo-01.svg" id="logo">
-        <nav id="mainNav">
-        <h2 class="hidden">Main Navigation</h2>
-            <button id="hamButton"></button>
-            <div id="hamContainer">
-                <ul id="navigation">
-                    <li class="active"><a href="index.html">PORTFOLIO</a></li>
-                    <li><a href="about.html">ABOUT</a></li>
-                    <li><a href="contact.html">CONTACT</a></li>
-                </ul>
-            </div>
-        </nav>
-    </header>
-    <section id="intro">
-    <h2 class="hidden">Introduction</h2>
-        <h2 id="about-h">Hello!</h2>
-        <p id="about-p">My name is Jacob Smith, a Front End Developer and Graphic Designer located in London, Ontario. Take a look
-            at my portfolio projects below and learn a little bit about me!</p>
-        <button id="enter" href="#">Enter</button>
-    </section>
-    <main id="app">
-    <section id="portfolio">
-        <h2 class="hidden">Portfolio</h2>
-        <tile v-on:showdata="swapInfo" v-for="item in portfolioData" :key="item.id" :piece="item"></tile>
-    </section>
-    <modal :piece="currentItem"></modal>
-    <section id="motionGraphics">
-        <h2 class="hidden">Motion Graphics Section</h2>
-        <h2>3D & 2D Animation</h2>
-        <p>Demo Reel Text Here</p>
-    </section>
-    <section id="trapSection">
-        <h2 class="hidden">Trap Complex Gaming Section</h2>
-        <h2>Personal Project: Trap Complex Gaming</h2>
-        <p>Paragraph explaining Trap Complex</p>
-        <p>Bottom Paragraph Text</p>
-    </section>
-    </main>
-</section>
-<script src="https://cdn.jsdelivr.net/npm/vue@2/dist/vue.js"></script>
-<script src="js/components/hamMenu.js"></script>
-<script src="js/main.js" type="module" defer></script>    
-</body>
+   <head>
+      <meta charset="UTF-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css">
+      <link rel="stylesheet" href="https://use.typekit.net/ghs3lib.css">
+      <link rel="stylesheet" href="css/main.css">
+      <title>mindofjacob.ca | Portfolio | Front End Developer</title>
+   </head>
+   <body>
+      <section class="container">
+         <header id="mainHeader">
+            <img src="images/smith-logo.svg" id="logo">
+            <nav id="mainNav">
+               <h2 class="hidden">Main Navigation</h2>
+               <button id="hamButton"></button>
+               <div id="hamContainer">
+                  <ul id="navigation">
+                     <li class="active"><a href="index.html">PORTFOLIO</a></li>
+                     <li><a href="about.html">ABOUT</a></li>
+                     <li><a href="contact.html">CONTACT</a></li>
+                  </ul>
+               </div>
+            </nav>
+         </header>
+         <section id="intro">
+            <h2 class="hidden">Introduction</h2>
+            <h2 id="about-h">Hello!</h2>
+            <p id="about-p">My name is Jacob Smith, a Front End Developer and Graphic Designer located in London, Ontario. Take a look
+               at my portfolio projects below and learn a little bit about me!
+            </p>
+            <button id="enter" href="#">Enter</button>
+         </section>
+         <h2 class="section-header">DEVELOPER PROJECTS</h2>
+         <main id="app">
+            <section class="portfolio">
+               <h2 class="hidden">Developer Portfolio</h2>
+               <tile v-on:showdata="swapInfo" v-for="item in developProjects" :key="item.id" :piece="item"></tile>
+            </section>
+            <modal :piece="currentItem"></modal>
+            <h2 class="section-header">DESIGN PROJECTS</h2>
+            <section class="portfolio">
+               <h2 class="hidden"> Designer Portfolio</h2>
+               <tile v-on:showdata="swapInfo" v-for="item in designProjects" :key="item.id" :piece="item"></tile>
+            </section>
+            <modal :piece="currentItem"></modal>
+            <section id="motionGraphics">
+               <h2 class="hidden">Motion Graphics Section</h2>
+               <h2 class="section-header">3D & 2D Animation</h2>
+               <p>Demo Reel Text Here</p>
+            </section>
+            <section id="trapSection">
+               <h2 class="hidden">Trap Complex Gaming Section</h2>
+               <h2 class="section-header">Personal Project: Trap Complex Gaming</h2>
+               <p>Paragraph explaining Trap Complex</p>
+               <p>Bottom Paragraph Text</p>
+            </section>
+         </main>
+         <footer>
+            <section id="footer">
+               <button class="footer-button" href="#">Get In Touch!</button>
+               <img src="images/smith-logo.svg" id="footer-logo">
+               <button class="footer-button" href="#">Portfolio PDF</button>
+            </section>
+         </footer>
+      </section>
+      <script src="https://cdn.jsdelivr.net/npm/vue@2/dist/vue.js"></script>
+      <script src="js/components/hamMenu.js"></script>
+      <script src="js/main.js" type="module" defer></script>    
+   </body>
 </html>
