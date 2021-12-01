@@ -7,7 +7,8 @@ export default {
         changeData(){
             console.log("swapping");
             this.$emit("showdata",this.piece);
-        }
+        },
+
     },
 
     template: `

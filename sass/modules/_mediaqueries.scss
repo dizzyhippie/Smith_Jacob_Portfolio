@@ -9,6 +9,11 @@
         justify-content: space-evenly;
     }
 
+    .modal-panel{
+        width: 400px;
+        left: 4%;
+    }
+
     .left, .right{
         margin-right: 10px;
         margin-left: 10px;
@@ -37,6 +42,15 @@
                                             //THIRD TABLET QUERY
 
 @media screen and (min-width: 600px){
+
+    #mainHeader{
+        height: 400px;
+    }
+
+    .modal-panel{
+        width: 560px;
+        left: 3%;
+    }
     #contact-style{
         display: block;
     }
