@@ -23,6 +23,10 @@
         display: flex;
         justify-content: center;
     }
+
+    .footer-button{
+        margin-top: 15px;
+    }
 }
 
                                             //SECOND TABLET QUERY
@@ -39,6 +43,10 @@
         background-position: center;
         background-repeat: no-repeat;
         height: 555px;
+    }
+
+    .footer-button{
+        margin-top: 30px;
     }
 
 }
@@ -140,6 +148,12 @@
         justify-content: flex-start;
     }
 
+    .footer-button{
+        margin-top: 50px;
+        width: 150px;
+        font-size: 18px;
+    }
+
 }
 
                                             //FIRST DESKTOP
@@ -161,7 +175,22 @@
         margin-top: 50px;
     }
 
+    #aboutInfo{
+        margin-bottom: 50px;
+    }
 
+    #footer-logo{
+        width: 15%;
+    }
 
+    .footer-button{
+        margin-top: 75px;
+    }
     
+}
+
+@media screen and (min-width: 1200px){
+    .footer-button{
+        margin-top: 100px;
+    }
 }
