@@ -22,7 +22,7 @@ import TheModal from "./components/TheModal.js";
         methods: {
            swapInfo(item){
                this.currentItem = item;
-           }
+           },
         },
 
         components: {

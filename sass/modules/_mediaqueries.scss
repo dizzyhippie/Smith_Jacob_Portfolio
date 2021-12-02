@@ -9,6 +9,11 @@
         justify-content: space-evenly;
     }
 
+    .modal-panel{
+        width: 400px;
+        left: 4%;
+    }
+
     .left, .right{
         margin-right: 10px;
         margin-left: 10px;
@@ -23,6 +28,10 @@
                                             //SECOND TABLET QUERY
 
 @media screen and (min-width: 560px){
+
+    #logo{
+        width: 20%;
+    }
     #trapSection{
         display: block;
         background-image: url("../images/trapcomplex.png");
@@ -37,6 +46,19 @@
                                             //THIRD TABLET QUERY
 
 @media screen and (min-width: 600px){
+
+    #mainHeader{
+        height: 400px;
+    }
+
+    #mainNav{
+        margin-top: 150px;
+    }
+
+    .modal-panel{
+        width: 560px;
+        left: 3%;
+    }
     #contact-style{
         display: block;
     }
@@ -51,4 +73,71 @@
         padding: 25px;
        
     }
-}                                          
+}       
+
+                                            //FOURTH TABLET QUERY
+@media screen and (min-width: 800px){
+    #hamButton{
+        display: none;
+    }
+
+    #hamContainer, #navigation{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+        width: 450px;
+    }
+
+    #aboutInfo{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+        max-width: 800px; 
+        margin: 0 auto;
+        margin-top: 50px;
+
+    }
+
+    .about-selector{
+        margin-right: 25px;
+        margin-top: 50px;
+    }
+
+    .about-title{
+        margin-right: 25px;
+    }
+
+    .about-info{
+        max-width: 500px;
+        text-align: left;
+    }
+
+    .socialIcons{
+        justify-content: flex-start;
+    }
+
+}
+
+                                            //FIRST DESKTOP
+@media screen and (min-width: 1000px) {
+    #mainHeader{
+        height: 600px;
+    }
+
+    #logo{
+        margin-left: 20px;
+        width: 15%;
+    }
+
+    #enter{
+        display: none;
+    }
+
+    #hamContainer, #navigation{
+        margin-top: 50px;
+    }
+
+
+
+    
+}
