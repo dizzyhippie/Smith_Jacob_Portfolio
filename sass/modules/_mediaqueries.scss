@@ -88,6 +88,30 @@
         width: 450px;
     }
 
+    #trapSection{
+        background-image: url("../images/trap-desktop.png");
+    }
+
+    #aboutSkills{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+        max-width: 800px;
+        margin: 0 auto;
+    }
+    
+    .skills{
+        display: block;
+        margin-top: 45px;
+        margin-bottom: 25px;
+    }
+    
+    .about-icons{
+        max-width: 50%;
+        display: flex;
+        margin: 0 auto;
+    }
+
     #aboutInfo{
         display: flex;
         flex-direction: row;
