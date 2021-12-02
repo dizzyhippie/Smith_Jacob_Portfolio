@@ -14,6 +14,10 @@
         left: 4%;
     }
 
+    .m_desc{
+        width: 350px;
+    }
+
     .left, .right{
         margin-right: 10px;
         margin-left: 10px;
@@ -36,6 +40,12 @@
     #logo{
         width: 20%;
     }
+
+    .modal-panel{
+        left: 15%;
+        top: 20%;
+    }
+
     #trapSection{
         display: block;
         background-image: url("../images/trapcomplex.png");
@@ -65,8 +75,14 @@
 
     .modal-panel{
         width: 560px;
-        left: 3%;
+        left: 5%;
     }
+
+    .m_desc{
+        width: 450px;
+    }
+
+
     #contact-style{
         display: block;
     }
@@ -94,6 +110,10 @@
         flex-direction: row;
         justify-content: space-evenly;
         width: 450px;
+    }
+
+    .modal-panel{
+        left: 15%;
     }
 
     #trapSection{
@@ -171,6 +191,10 @@
         display: none;
     }
 
+    .modal-panel{
+        left: 22%;
+    }
+
     #hamContainer, #navigation{
         margin-top: 50px;
     }
@@ -192,5 +216,9 @@
 @media screen and (min-width: 1200px){
     .footer-button{
         margin-top: 100px;
+    }
+
+    .modal-panel{
+        left: 25%;
     }
 }
