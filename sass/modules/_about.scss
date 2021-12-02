@@ -23,24 +23,12 @@
     max-width: 250px;
 }
 
-#aboutSkills{
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: space-evenly;
-}
-
 .skills{
-    margin-top: 45px;
-    margin-bottom: 25px;
+    display: none;
 }
 
-.left{
-    margin-right: 10px;
-}
-
-.right{
-    margin-left: 10px;
+.about-icons{
+    display: none;
 }
 
 .fab{
