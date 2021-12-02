@@ -11,8 +11,9 @@
    </head>
    <body>
       <section class="container">
+         <h2 class="hidden">Contact Page</h2>
          <header id="mainHeader">
-            <img src="images/smith-logo.svg" id="logo">
+            <img src="images/smith-logo.svg" id="logo" alt="Jacob's Logo">
             <nav id="mainNav">
                <h2 class="hidden">Main Navigation</h2>
                <button id="hamButton"></button>
@@ -26,7 +27,8 @@
             </nav>
          </header>
          <section id="contact">
-            <img src="images/contact-style.png" id="contact-style">
+            <h2 class="hidden">Contact Form</h2>
+            <img src="images/contact-style.png" id="contact-style" alt="styling image">
             <form action="./includes/mail/send.php" method="POST" id="contact-form">
               <input required type="text" id="firstname" name="firstname" placeholder="First Name*" class="input-field">
               <input required type="text" id="lastname" name="lastname" placeholder="Last Name*" class="input-field">
@@ -37,10 +39,17 @@
          </section>
          <footer>
             <section id="footer">
-               <a href="contact.html"><button class="footer-button">Get In Touch!</button></a>
-               <img src="images/smith-logo.svg" id="footer-logo">
-               <a href="images/Smith_Portfolio_GD.pdf" target="_blank"><button class="footer-button">Portfolio PDF</button></a>
+               <h2 class="hidden">Footer</h2>
+               <a href="contact.html" class="footer-button">Get In Touch!</a>
+               <img src="images/smith-logo.svg" id="footer-logo" alt="Jacob Smith's Logo">
+               <a href="images/Smith_Portfolio_GD.pdf" target="_blank" class="footer-button">Portfolio PDF</a>
             </section>
+            <section class="home-socialIcons">
+               <h2 class="hidden">Footer Social Icons</h2>
+               <a href="https://www.linkedin.com/in/mindofjacob/" target="_blank"><i class="fab fa-linkedin fa-2x home-icons"></i></a>
+               <a href="https://www.youtube.com/channel/UCWvFBvVqb6_yR-DwKyT_yLA" target="_blank"><i class="fab fa-youtube fa-2x home-icons"></i></a>
+               <a href="https://github.com/dizzyhippie" target="_blank"><i class="fab fa-github-square fa-2x home-icons"></i></a>
+             </section>
          </footer>
       </section>
       <script src="js/components/hamMenu.js"></script>

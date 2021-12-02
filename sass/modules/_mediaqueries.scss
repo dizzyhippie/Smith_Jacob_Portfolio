@@ -27,10 +27,6 @@
         display: flex;
         justify-content: center;
     }
-
-    .footer-button{
-        margin-top: 15px;
-    }
 }
 
                                             //SECOND TABLET QUERY
@@ -55,8 +51,25 @@
         height: 555px;
     }
 
-    .footer-button{
-        margin-top: 30px;
+    .trap-title{
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        font-family: loos-normal, sans-serif;
+        font-weight: 800;
+        color: black;
+        padding-bottom: 15px;
+        font-size: 24px;
+    }
+    
+    .trap-desc{
+        display: flex;
+        width: 500px;
+        text-align: center;
+        font-size: 18px;
+        color: black;
+        margin: 0 auto;
+        margin-bottom: 15px;
     }
 
 }
@@ -95,7 +108,6 @@
 
     #contact-form{
         padding: 25px;
-       
     }
 }       
 
@@ -167,13 +179,6 @@
     .socialIcons{
         justify-content: flex-start;
     }
-
-    .footer-button{
-        margin-top: 50px;
-        width: 150px;
-        font-size: 18px;
-    }
-
 }
 
                                             //FIRST DESKTOP
@@ -185,10 +190,6 @@
     #logo{
         margin-left: 20px;
         width: 15%;
-    }
-
-    #enter{
-        display: none;
     }
 
     .modal-panel{
@@ -206,18 +207,10 @@
     #footer-logo{
         width: 15%;
     }
-
-    .footer-button{
-        margin-top: 75px;
-    }
     
 }
 
 @media screen and (min-width: 1200px){
-    .footer-button{
-        margin-top: 100px;
-    }
-
     .modal-panel{
         left: 25%;
     }
