@@ -7,15 +7,13 @@
 }
 
 .footer-button{
+    display: block;
     font-family: loos-normal, sans-serif;
     font-size: 12px;
     font-weight: 600;
     background-color: #9F5F81;
     margin-top: 25px;
     color: #fff;
-    padding: 10px;
-    border-radius: 50px;
-    border: none;
 }
 
 .close, .github{
