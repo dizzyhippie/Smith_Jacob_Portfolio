@@ -5,6 +5,6 @@ export default {
 
     template: `
     <section class="about-developer">
-        <p> {{ piece.abinfo }} </p>
+        <p class="about-info"> {{ piece.abinfo }} </p>
         </section> `
 }

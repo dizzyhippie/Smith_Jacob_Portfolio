@@ -78,7 +78,7 @@
     margin-bottom: 10px;
 }
 
-#about-p{
+#about-p, #motion-text{
     text-align: center;
     font-family: loos-normal, sans-serif;
     font-size: 18px;
@@ -99,4 +99,23 @@
 
 .skills-desc{
     text-align: center;
+}
+
+.about-title{
+    font-family: loos-normal, sans-serif;
+    font-size: 18px;
+    font-weight: 800;
+    color: #9E5F81;
+}
+
+.about-info{
+    text-align: center;
+    font-family: loos-normal, sans-serif;
+    font-size: 18px;
+    line-height: 20px;;
+    font-weight: 400;
+    color: #9E5F81;
+    margin-left: 10px;
+    margin-right: 10px;
+
 }

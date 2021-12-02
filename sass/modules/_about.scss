@@ -7,14 +7,14 @@
     cursor: pointer;
 }
 
+#aboutInfo{
+    margin-top: 50px;
+}
+
 .about-bio{
     margin-left: 10px;
     margin-right: 10px;
 
-}
-
-.about-active{
-    color: purple;
 }
 
 #about-pic{
@@ -41,4 +41,17 @@
 
 .right{
     margin-left: 10px;
+}
+
+.fab{
+    margin-left: 10px;
+    margin-right: 10px;
+    color: #9E5F81;
+}
+
+.socialIcons{
+    display: flex;
+    justify-content: center;
+    margin: 0 auto;
+    margin-top: 25px;
 }
