@@ -10,9 +10,10 @@
       <title>mindofjacob.ca | Portfolio | Front End Developer</title>
    </head>
    <body>
+      <h1 class="hidden">Jacob's Portfolio Site</h1>
       <section class="container">
          <header id="mainHeader">
-            <img src="images/smith-logo.svg" id="logo">
+            <img src="images/smith-logo.svg" id="logo" alt="Jacob Smith's Logo">
             <nav id="mainNav">
                <h2 class="hidden">Main Navigation</h2>
                <button id="hamButton"></button>
@@ -23,8 +24,7 @@
                      <li><a href="contact.html">CONTACT</a></li>
                   </ul>
                </div>
-            </nav>
-            
+            </nav>  
          </header>
          <section id="intro">
             <h2 class="hidden">Introduction</h2>
@@ -32,10 +32,10 @@
             <p id="about-p">My name is Jacob Smith, a Front End Developer and Graphic Designer located in London, Ontario. Take a look
                at my portfolio projects below and learn a little bit about me!
             </p>
-            <button id="enter" href="#">Enter</button>
+            <i class="fas fa-arrow-down fa-2x"></i>
          </section>
-         <h2 class="section-header">DEVELOPER PROJECTS</h2>
          <main id="app">
+            <h2 class="section-header">DEVELOPER PROJECTS</h2>
             <section class="portfolio">
                <h2 class="hidden">Developer Portfolio</h2>
                <tile v-on:showdata="swapInfo" v-for="item in developProjects" :key="item.id" :piece="item"></tile>
@@ -51,22 +51,32 @@
                <h2 class="hidden">Motion Graphics Section</h2>
                <h2 class="section-header">3D & 2D Animation</h2>
                <section id="video">
-                  <video src="video/demo_reel.mp4" controls></video>
+                  <h2 class="hidden">Video Player</h2>
+                  <video src="video/demo-reel.mp4" controls></video>
                </section>
                <p id="motion-text">Take a look at my demo reel to see various motion projects I've worked on. All projects were created
                   using a combination of After Effects and Cinema 4D.</p>
             </section>
+            <h2 class="trap-title">Trap Complex Gaming</h2>
+            <p class="trap-desc">Trap Complex Gaming was a personal project started with a friend of mine. We hosted online tournaments for online games
+               during the lockdown. All of the graphics, and social media content was created by me!</p>
             <section id="trapSection">
                <h2 class="hidden">Trap Complex Gaming Section</h2>
-               <h2 class="section-header">Personal Project: Trap Complex Gaming</h2>
             </section>
          </main>
          <footer>
             <section id="footer">
-               <a href="contact.html"><button class="footer-button">Get In Touch!</button></a>
-               <img src="images/smith-logo.svg" id="footer-logo">
-               <a href="images/Smith_Portfolio_GD.pdf" target="_blank"><button class="footer-button">Portfolio PDF</button></a>
+               <h2 class="hidden">Footer</h2>
+               <a href="contact.html" class="footer-button">Get In Touch!</a>
+               <img src="images/smith-logo.svg" id="footer-logo" alt="Jacob Smith's Logo">
+               <a href="images/Smith_Portfolio_GD.pdf" target="_blank" class="footer-button">Portfolio PDF</a>
             </section>
+            <section class="home-socialIcons">
+               <h2 class="hidden">Footer Social Icons</h2>
+               <a href="https://www.linkedin.com/in/mindofjacob/" target="_blank"><i class="fab fa-linkedin fa-2x home-icons"></i></a>
+               <a href="https://www.youtube.com/channel/UCWvFBvVqb6_yR-DwKyT_yLA" target="_blank"><i class="fab fa-youtube fa-2x home-icons"></i></a>
+               <a href="https://github.com/dizzyhippie" target="_blank"><i class="fab fa-github-square fa-2x home-icons"></i></a>
+             </section>
          </footer>
       </section>
       <script src="https://cdn.jsdelivr.net/npm/vue@2/dist/vue.js"></script>
