@@ -7,7 +7,7 @@ export default {
         openModal(){
             console.log("You selected");
             let modal = document.querySelector(".modal-panel");
-            let closeButton = document.querySelector(".close")
+            let closeButton = document.querySelector(".close");
             modal.style.display = "block";
             this.$emit("showdata",this.piece);
             closeButton.addEventListener('click', () => { modal.style.display = "none";})
