@@ -12,7 +12,7 @@ export default {
         <h2 class="m_type tools">Tools Used</h2>
         <h3 class="tools-list"> {{ piece.tools }}</h3>
         <section class="button-wrapper">
-            <a :href="piece.link" target="_blank"><button class="github">View Github <i class="fa-brands fa-github"></i></button></a>
+            <a :href="piece.link" target="_blank"><button class="github">View Project</button></a>
             <button class="close" name="close">CLOSE X</button>
         </section>
     </section> `
