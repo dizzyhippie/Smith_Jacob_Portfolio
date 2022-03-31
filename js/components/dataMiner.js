@@ -10,8 +10,8 @@ function getPortfolioData(params, cb) {
         let newQStringParams = keys.map(key => `${key}=${params[key]}`).join("&&");
 
         baseURL += `?${newQStringParams}`;
-    }    
-    
+    }
+
     fetch(baseURL)
     .then(res => res.json()) // unpack the API response (turn it back into plain JS)
     .then(data => {

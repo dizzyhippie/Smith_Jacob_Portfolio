@@ -1,0 +1,40 @@
+.mainHeader{
+    background-image: url("../images/header.png");
+    height: 240px;
+    background-position: center;
+    background-size: cover;
+}
+
+.fade-in-down {
+    animation: fade-in-down 2s ease;
+  }
+  @keyframes fade-in-down {
+    0% {
+      opacity: 0;
+      transform: translateY(-20px);
+    }
+    100% {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+
+#arrowIcon{
+    display: none;
+}
+
+.navigation{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    padding-top: 200px;
+}
+
+.navigation a{
+    font-family: 'Inter', sans-serif;
+    font-weight: 600;
+    text-decoration: none;
+    color: white;
+    margin-left: 10px;
+    margin-right: 10px;
+}

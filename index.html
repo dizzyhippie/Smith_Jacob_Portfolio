@@ -4,83 +4,83 @@
       <meta charset="UTF-8">
       <meta http-equiv="X-UA-Compatible" content="IE=edge">
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
-      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css">
-      <link rel="stylesheet" href="https://use.typekit.net/ghs3lib.css">
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+      <link rel="preconnect" href="https://fonts.googleapis.com">
+      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+      <link rel="icon" type="image/x-icon" href="images/favicon.ico">
+      <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&family=Open+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
       <link rel="stylesheet" href="css/main.css">
       <title>mindofjacob.ca | Portfolio | Front End Developer</title>
    </head>
    <body>
-      <h1 class="hidden">Jacob's Portfolio Site</h1>
-      <section class="container">
-         <header id="mainHeader">
-            <img src="images/smith-logo.svg" id="logo" alt="Jacob Smith's Logo">
-            <nav id="mainNav">
-               <h2 class="hidden">Main Navigation</h2>
-               <button id="hamButton"></button>
-               <div id="hamContainer">
-                  <ul id="navigation">
-                     <li class="active"><a href="index.html">PORTFOLIO</a></li>
-                     <li><a href="about.html">ABOUT</a></li>
-                     <li><a href="contact.html">CONTACT</a></li>
-                  </ul>
-               </div>
-            </nav>  
-         </header>
-         <section id="intro">
-            <h2 class="hidden">Introduction</h2>
-            <h2 id="about-h">Hello!</h2>
-            <p id="about-p">My name is Jacob Smith, a Front End Developer and Graphic Designer located in London, Ontario. Take a look
-               at my portfolio projects below and learn a little bit about me!
-            </p>
-            <i class="fas fa-arrow-down fa-2x"></i>
-         </section>
-         <main id="app">
-            <h2 class="section-header">DEVELOPER PROJECTS</h2>
-            <section class="portfolio">
-               <h2 class="hidden">Developer Portfolio</h2>
-               <tile v-on:showdata="swapInfo" v-for="item in developProjects" :key="item.id" :piece="item"></tile>
-            </section>
-            <modal :piece="currentItem"></modal>
-            <h2 class="section-header">DESIGN PROJECTS</h2>
-            <section class="portfolio">
-               <h2 class="hidden"> Designer Portfolio</h2>
-               <tile v-on:showdata="swapInfo" v-for="item in designProjects" :key="item.id" :piece="item"></tile>
-            </section>
-            <modal :piece="currentItem"></modal>
-            <section id="motionGraphics">
-               <h2 class="hidden">Motion Graphics Section</h2>
-               <h2 class="section-header">3D & 2D Animation</h2>
-               <section id="video">
-                  <h2 class="hidden">Video Player</h2>
-                  <video src="video/demo-reel.mp4" controls></video>
-               </section>
-               <p id="motion-text">Take a look at my demo reel to see various motion projects I've worked on. All projects were created
-                  using a combination of After Effects and Cinema 4D.</p>
-            </section>
-            <h2 class="trap-title">Trap Complex Gaming</h2>
-            <p class="trap-desc">Trap Complex Gaming was a personal project started with a friend of mine. We hosted online tournaments for online games
-               during the lockdown. All of the graphics, and social media content was created by me!</p>
-            <section id="trapSection">
-               <h2 class="hidden">Trap Complex Gaming Section</h2>
-            </section>
-         </main>
-         <footer>
-            <section id="footer">
-               <h2 class="hidden">Footer</h2>
-               <a href="contact.html" class="footer-button">Get In Touch!</a>
-               <img src="images/smith-logo.svg" id="footer-logo" alt="Jacob Smith's Logo">
-               <a href="images/Smith_Portfolio_GD.pdf" target="_blank" class="footer-button">Portfolio PDF</a>
-            </section>
-            <section class="home-socialIcons">
-               <h2 class="hidden">Footer Social Icons</h2>
-               <a href="https://www.linkedin.com/in/mindofjacob/" target="_blank"><i class="fab fa-linkedin fa-2x home-icons"></i></a>
-               <a href="https://www.youtube.com/channel/UCWvFBvVqb6_yR-DwKyT_yLA" target="_blank"><i class="fab fa-youtube fa-2x home-icons"></i></a>
-               <a href="https://github.com/dizzyhippie" target="_blank"><i class="fab fa-github-square fa-2x home-icons"></i></a>
-             </section>
-         </footer>
+      <h1 class="hidden">Jacob's Portfolio Website</h1>
+      <header class="mainHeader fade-in-down">
+         <nav class="mainNav">
+            <h2 class="hidden">Main Navigation</h2>
+            <ul class="navigation">
+               <li><a class="active" href="index.html">PORTFOLIO</a></li>
+               <li><a href="about.html">ABOUT</a></li>
+               <li><a href="contact.html">CONTACT</a></li>
+            </ul>
+         </nav>
+         <i class="fa-solid fa-2x fa-arrow-down bounce2" id="arrowIcon"></i>
+      </header>
+      <section class="introduction">
+         <h2 class="hidden">Bio Introduction</h2>
+         <h2 class="intro-header">Hello!</h2>
+         <p class="intro-text">My name is Jacob Smith, I'm a web developer in London, Ontario. Take a look at some of my projects below,
+            thanks for stopping by!
+         </p>
+         <ul class="socials">
+            <a href="https://www.linkedin.com/in/mindofjacob/" target="_blank"><i class="fa-brands fa-linkedin-in fa-2x"></i></a>
+            <a href="https://github.com/dizzyhippie" target="_blank"><i class="fa-brands fa-2x fa-github"></i></a>
+         </ul>
       </section>
+      <section class="featured-projects">
+         <h2 class="projects-header">Featured Projects</h2>
+         <section class="featured-wrapper">
+            <section class="featured trap">
+               <img src="images/trap-hero.png" class="featured-hero">
+               <h2 class="featured-header">Trap Complex Gaming</h2>
+               <button class="featured-button"><a href="trap.html" class="featured-link">View Project</a></button>
+            </section>
+            <section class="featured chat">
+               <img src="images/freechat-hero.png" class="featured-hero">
+               <h2 class="featured-header">Chat App</h2>
+               <button class="featured-button"><a href="chat.html" class="featured-link">View Project</a></button>
+            </section>
+            <section class="featured Plant Paradise">
+               <img src="images/plant-hero.png" class="featured-hero">
+               <h2 class="featured-header">Plant Paradise</h2>
+               <button class="featured-button">Coming Soon!</button>
+            </section>
+         </section>
+      </section>
+      <main id="app">
+         <h2 class="projects-header">Code Projects</h2>
+         <section class="portfolio">
+            <h2 class="hidden">Developer Portfolio</h2>
+            <tile v-on:showdata="swapInfo" v-for="item in developProjects" :key="item.id" :piece="item"></tile>
+         </section>
+         <modal :piece="currentItem"></modal>
+         <h2 class="projects-header">Other Projects</h2>
+         <section class="portfolio">
+            <h2 class="hidden">Developer Portfolio</h2>
+            <tile v-on:showdata="swapInfo" v-for="item in otherProjects" :key="item.id" :piece="item"></tile>
+         </section>
+         <modal :piece="currentItem"></modal>
+      </main>
+      <footer class="mainFooter">
+         <h2 class="hidden">Footer Section</h2>
+         <ul class="footer-socials">
+            <a href="https://www.linkedin.com/in/mindofjacob/" target="_blank"><i class="fa-brands fa-linkedin-in fa-2x"></i></a>
+            <a href="https://github.com/dizzyhippie" target="_blank"><i class="fa-brands fa-2x fa-github"></i></a>
+         </ul>
+         <ul class="footer-arrow">
+            <a href="#"><i class="fa-solid fa-2x fa-arrow-up"></i></a>
+         </ul>
+      </footer>
       <script src="https://cdn.jsdelivr.net/npm/vue@2/dist/vue.js"></script>
-      <script src="js/components/hamMenu.js"></script>
-      <script src="js/main.js" type="module" defer></script>    
+      <script src="js/main.js" type="module" defer></script>
    </body>
 </html>

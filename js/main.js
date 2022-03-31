@@ -5,17 +5,15 @@ import TheModal from "./components/TheModal.js";
 (() => {
     const myVue = new Vue ({
         created: function() {
-            //fetch portfolio data
-            //getPortfolioData(null, (data) => this.portfolioData = data );
             getPortfolioData(null, (data) => {
                 this.developProjects = data.filter(item => item.develop === "true");
-                this.designProjects = data.filter(item => item.design === "true")
+                this.otherProjects = data.filter(item => item.other === "true")
             });
         },
 
         data: {
             developProjects: [],
-            designProjects: [],
+            otherProjects: [],
             currentItem : {}
         },
 
@@ -29,7 +27,7 @@ import TheModal from "./components/TheModal.js";
             tile: TheGalleryThumbnail,
             modal: TheModal,
         }
-    
+
     }).$mount("#app");
 
 

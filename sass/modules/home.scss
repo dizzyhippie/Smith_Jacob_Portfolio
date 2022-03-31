@@ -1,0 +1,99 @@
+// GENERAL HOME STYLING
+.projects-header{
+    text-align: center;
+    font-family: 'Inter', sans-serif;
+    font-weight: 700;
+    font-size: 1.5rem;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    color: #9F5F80;
+}
+
+// FEATURED PROJECTS
+.featured-wrapper{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.featured-hero{
+    width: 85%;
+    margin: 0 auto;
+    filter: drop-shadow(2px 2px 2px black);
+}
+
+.featured{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.featured-header{
+    font-family: 'Inter', sans-serif;
+    text-align: center;
+    font-size: 1rem;
+    font-weight: 700;
+    color: #9F5F80;
+    margin-top: 10px;
+    margin-bottom: 5px;
+}
+
+.featured-button{
+    width: 100px;
+    margin: 0 auto;
+    color: #9F5F80;
+    border: none;
+    background-color: white;
+}
+
+.featured-link{
+    text-decoration: none;
+    color: #9F5F80;
+}
+
+// PORTFOLIO PROJECTS
+.portfolio{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.portfolio-pieces{
+    background-image: url("../images/tile.png");
+    background-repeat: no-repeat;
+    height: 205px;
+    width: 265px;
+    border-radius: 45px;
+    margin: 0 auto;
+    margin-bottom: 25px;
+}
+
+.p_name{
+    font-family: 'Inter', sans-serif;
+    text-align: center;
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: white;
+    margin-top: 75px;
+}
+
+.p_industry{
+    font-family: 'Inter', sans-serif;
+    text-align: center;
+    font-size: 1rem;
+    color: white;
+    margin-top: 15px;
+}
+
+.modal-panel{
+    display: none;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background-color: #E4E4E4;
+    position: fixed;
+    overflow: scroll;
+    z-index: 99;
+}
