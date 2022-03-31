@@ -8,12 +8,13 @@ import TheSelectorModule from "./components/TheSelectorModule.js";
             //fetch portfolio data
             getPortfolioData(null, (data) => {
                 this.aboutData = data.filter(item => item.about === "true");
-                this.portfolioData = data.filter(item => item.about === "false")
+                this.portfolioData = data.filter(item => item.about === "false");
             });
         },
 
         data: {
             aboutData: [],
+            portfolioData: [],
             currentItem : {},
         },
 
@@ -29,7 +30,6 @@ import TheSelectorModule from "./components/TheSelectorModule.js";
             selector: TheSelectorModule,
             about: TheAboutModule
         }
-    
     }).$mount("#app");
 
 
