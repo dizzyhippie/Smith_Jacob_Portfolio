@@ -3,5 +3,35 @@
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
-    height: 200px;
+    height: 150px;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.footer-socials{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    padding-left: 7px;
+    padding-top: 55px;
+
+    a{
+        margin-left: 0.5em;
+        margin-right: 0.5em;
+        color: white;
+    }
+}
+
+.footer-arrow{
+    display: flex;
+    justify-content: flex-end;
+    padding-right: 7px;
+    padding-top: 55px;
+
+    a{
+        margin-right: 0.5em;
+        color: white;
+    }
 }

@@ -8,9 +8,11 @@ export default {
             console.log("You selected");
             let modal = document.querySelector(".modal-panel");
             let closeButton = document.querySelector(".close");
+            let backArrow = document.querySelector('.back');
             modal.style.display = "block";
             this.$emit("showdata",this.piece);
             closeButton.addEventListener('click', () => { modal.style.display = "none";})
+            backArrow.addEventListener('click', () => { modal.style.display = "none";})
         }
     },
 
