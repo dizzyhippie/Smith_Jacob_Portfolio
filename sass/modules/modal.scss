@@ -103,3 +103,16 @@
       99% { transform:translateY(-3%); }
       100% { transform:translateY(0); }
   }
+
+@media screen and (min-width: 725px){
+    .m_desc{
+        max-width: 725px;
+        margin: 0 auto;
+    }
+
+    .modal-images{
+        width: 100%;
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+}
