@@ -117,3 +117,29 @@
     background-color: white;
     border-radius: 50px;
 }
+
+@media screen and (min-width: 525px){
+    .about-info p{
+        margin: 0 auto;
+        margin-bottom: 250px;
+        max-width: 530px;
+        font-size: 22px;
+        line-height: 26px;
+    }
+}
+
+@media screen and (min-width: 625px){
+    .skills-wrapper{
+        justify-content: space-evenly;
+    }
+}
+
+@media screen and (min-width: 725px){
+    .about-info{
+        margin-bottom: 150px;
+    }
+
+    .see-more{
+        justify-content: space-evenly;
+    }
+}
