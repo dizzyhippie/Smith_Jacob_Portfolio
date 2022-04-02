@@ -6,7 +6,6 @@
     margin-top: 1em;
     margin-bottom: 0.25em;
     color: #9F5F80;
-
 }
 
 .m_type{
@@ -47,11 +46,24 @@
     margin-bottom: 5px;
 }
 
+.images-con{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.modal-images{
+    max-width: 85%;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
 .button-wrapper{
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
     margin-top: 20px;
+    margin-bottom: 20px;
 }
 
 .github{
