@@ -30,15 +30,6 @@
             <h2 class="hidden">About Me</h2>
                <section class="skills-wrapper">
                   <section class="skills">
-                     <h2 class="skills-header">Languages & Frameworks</h2>
-                     <ul>
-                        <li>• HTML & CSS</li>
-                        <li>• Javascript & Vue.JS</li>
-                        <li>• PHP & LUMEN</li>
-                        <li>• NODE.JS</li>
-                     </ul>
-                  </section>
-                  <section class="skills">
                      <h2 class="skills-header">Developer Skills</h2>
                      <ul>
                         <li>• UI/UX Prototyping</li>
@@ -47,14 +38,34 @@
                         <li>• Responsive Web Development</li>
                      </ul>
                   </section>
+                  <section class="skills">
+                     <h2 class="skills-header">Languages & Frameworks</h2>
+                     <ul>
+                        <li>• HTML & CSS</li>
+                        <li>• Javascript & Vue.JS</li>
+                        <li>• PHP & LUMEN</li>
+                        <li>• NODE.JS</li>
+                     </ul>
+                  </section>
                </section>
-               <ul id="about-select">
+               <ul class="about-select">
                   <selector v-on:showdata="swapInfo" v-for="item in aboutData" :piece="item" :key="item.id"></selector>
                   <selector v-on:showdata="swapInfo" v-for="item in portfolioData" :piece="item" :key="item.id"></selector>
                </ul>
                <about :piece="currentItem"></about>
          </section>
+         <section class="see-more">
+            <section class="resume">
+               <h2>Resume</h2>
+               <button class="see-button">View PDF</button>
+            </section>
+            <section class="port">
+               <h2>Portfolio</h2>
+               <button class="see-button">View PDF</button>
+            </section>
+         </section>
       </main>
+      <section></section>
       <footer class="mainFooter">
          <h2 class="hidden">Footer Section</h2>
          <ul class="footer-socials">

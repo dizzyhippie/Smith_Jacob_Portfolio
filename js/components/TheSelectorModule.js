@@ -13,6 +13,6 @@ export default {
 
     template: `
     <section class="about-selector" @click="changeData">
-        <h2 class="about-title"> {{ piece.abtitle }} </h2>
+        <h2 class="about-title bounce"> {{ piece.abtitle }} </h2>
         </section> `
 }

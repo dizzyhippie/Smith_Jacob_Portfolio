@@ -39,3 +39,10 @@
         color: white;
     }
 }
+
+@media screen and (min-width: 500px){
+    .intro-text{
+        max-width: 500px;
+        margin: 0 auto;
+    }
+}
