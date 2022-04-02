@@ -1,0 +1,76 @@
+#contact{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: white;
+    margin-top: 100px;
+    margin-bottom: 100px;
+
+    text-align: center;
+    font-size: 28px;
+    font-family: 'Inter', sans-serif;
+    font-weight: 700;
+    font-size: 1.5rem;
+    color: #9F5F81;
+}
+
+#contact-form{
+    padding: 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+label{
+    font-family: loos-normal, sans-serif;
+}
+
+.input-field{
+    font-family: loos-normal, sans-serif;
+    margin-bottom: 10px;
+    margin-top: 10px;
+    border: none;
+    border-bottom: 1px solid #E5E5E5;
+    width: 280px;
+}
+
+#message{
+    width: 280px;
+    border: 1px solid #E5E5E5;
+}
+
+#submit{
+    display: block;
+    margin: 0 auto;
+    font-family: loos-normal, sans-serif;
+    font-size: 14px;
+    font-weight: 600;
+    background-color: #9F5F81;
+    color: #fff;
+    padding: 10px;
+    border-radius: 25px;
+    border: none;
+    width: 100px;
+}
+
+#contact-style{
+    display: none;
+}
+
+@media screen and (min-width: 620px){
+    .input-field{
+        font-size: 24px;
+        margin-top: 20px;
+        margin-bottom: 20px;
+        width: 450px;
+    }
+
+    #message{
+        width: 450px;
+    }
+
+    #submit{
+        font-size: 24px;
+        text-align: center;
+    }
+}
